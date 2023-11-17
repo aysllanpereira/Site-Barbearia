@@ -1,60 +1,76 @@
 @charset "UTF-8";
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-body {
     margin: 0;
     padding: 0;
 }
 
-header, h1 li {
-    background: rgb(0, 0, 0);
-    position: fixed;
-    padding: 10px;
-    padding-inline: 16px;
-    top: 0;
-    width: 100%;
-    height: 90px;
-    margin-inline: auto;
-}
-.text-container {
-    color: darkgoldenrod;
-    
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.links {
-    text-align: center;
-    
-}
-
-.cortes {
-    display: inline;
-    padding: 40px;
-    font-size: 1.1em;
+.header, .navigation_header {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-
 }
 
-.contato {
-    display: inline;
-    padding: 40px;
-    font-size: 1.1em;
+.header {
+    background: rgb(0, 0, 0);
+    height: 5em;
+    justify-content: space-between;
+    padding: 0 10%;
 }
 
-.redes {
-    display: inline;
-    padding: 40px;
-    font-size: 1.1em;
+.logo_header {
+    color: darkgoldenrod;
+    cursor: pointer;
 }
 
-a {
+.navigation_header {
+    gap: 3em;
+}
+
+.navigation_header a {
     text-decoration: none;
-    color: aliceblue;
+    color: white;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.navigation_header a:hover {
+    transform: scale(1.2);
+}
+
+.btn_icons {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .btn_icons {
+        display: block;
+    }
+    .navigation_header {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: black;
+        height: 100%;
+        width: 35vw;
+        padding: 16px;
+        animation-duration: 1s;
+        margin-left: -100vw;
+
+    }
+}
+
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    top {margin-left: -10vw;}
 }
 
 .imagem {
@@ -70,8 +86,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
 .centro {
