@@ -24,3 +24,26 @@ buttonMenu.addEventListener("click", btnMenu);
 
 const buttonClose = document.getElementById("btn_icons_navigation");
 buttonClose.addEventListener("click", btnMenu);
+
+let currentSlide = 0;
+ 
+function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+
+    if(index >= slides.length) {
+        currentSlide = 0;
+    } else if(index < 0) {
+        currentSlide = slides.length - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    const offset = currentSlide * 100;
+    document.querySelector('.imagens-container').style.transform = `translateX(${offset}%)`;
+}
+
+function changeSlide(n) {
+    showSlide(currentSlide + n);
+}
+
+document.addEventListener("DOMContentLoaded", showSlide(currentSlide));
