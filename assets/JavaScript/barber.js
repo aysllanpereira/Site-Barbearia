@@ -1,4 +1,3 @@
-
 var header = document.getElementById("header");
 var navigation = document.getElementById("navigation_header");
 var content = document.getElementById("content");
@@ -42,3 +41,20 @@ function nextImage() {
 
     document.getElementById("radio" + count).checked = true;
 } */
+
+/* código para inserir uma transição na página (preciso revisar)
+
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        document.querySelector('.content').classList.add('show');
+    }, 10);
+}); 
+
+window.addEventListener("scroll", function() {
+    var element = document.querySelector('.content');
+    var positionFromTop = element.getBoundingClientRect().top;
+
+    if(positionFromTop - window.innerHeight < 0) {
+        element.classList.add('show');
+    }
+}); */

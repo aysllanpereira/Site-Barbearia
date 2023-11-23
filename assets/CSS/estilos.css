@@ -40,7 +40,7 @@ body {
 .navigation_header a {
     text-decoration: none;
     color: white;
-    transition: 1s;
+    transition: 2.5s;
     font-weight: bold;
 }
 
@@ -56,44 +56,67 @@ body {
     display: none;
 }
 
+/*  código para inserir uma transição, necessário revisar
+.content {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.content.show {
+    opacity: 1;
+} */
+
 .slider {
-    margin: 0 auto;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -100px;
     
+
 }
 
 .slides {
-    width: 400%;
-    height: 400px;
     display: flex;
+    transition: 1s;
 
-}
-
-.slides input {
-    display: none;
 }
 
 .slide {
-    width: 25%;
-    position: relative;
-}
-
-.slide img {
-    width: 800px;
+    width: 100%;
+    text-align: center;
     
 }
 
-.manual-navigation {
+img {
+    padding: 15px;
+}
+
+.slides img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.manual-navigation, .navigation-auto {
     position: absolute;
-    width: 800px;
-    margin-top: 20%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.manual-btn {
+.manual-navigation {
+    margin-top: 90%;
+}
+
+.navigation-auto {
+    margin-top: 80%;
+}
+
+.barbershop {
+    margin-top: 80px;
+}
+
+/* .manual-btn {
     border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
@@ -159,7 +182,7 @@ body {
 
 #radio4:checked ~ .navigation-auto .auto-btn4 {
     background-color: white;
-}
+} */
 
 /* @media screen and (max-width: 380px) {
     .header, .navigation_header {
@@ -220,9 +243,6 @@ body {
     margin-top: 30px;
 }
 
-.barbershop {
-    margin-top: 30px;
-}
 
 .text {
     margin-top: 30px;
@@ -236,20 +256,37 @@ button {
     font-size: 16px;
 }
 
-.servicos {
-    column-count: 2;
-    column-gap: 5px;
-
-}
-
 .servicos h2 {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
 }
 
-.cabelo-barba {
-    display: flex;
-    margin-top: 15px;
+.imagens-servicos {
+    column-count: 2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    transition: 2s;
+    
 }
+
+
+
+.servicos img {
+    width: 40%;
+    margin-top: 8px;
+    margin-bottom: 50px;
+
+}
+
+.imagens-servicos img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 
 .rodape {
     background: rgb(0, 0, 0);
