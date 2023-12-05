@@ -199,23 +199,7 @@ img {
     }
 } */
 
-@media screen and (max-width: 768px) {
-    .btn_icons {
-        display: block;
-    }
-    .navigation_header {
-        position: absolute;
-        flex-direction: column;
-        top: 0;
-        background-color: black;
-        height: 100%;
-        width: 35vw;
-        padding: 16px;
-        animation-duration: 1s;
-        margin-left: -100vw;
 
-    }
-}
 
 @keyframes showSidebar {
     from {margin-left: -100vw;}
@@ -226,7 +210,7 @@ img {
     background-image: url(../imagens/header\ \(2\).jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; 
     background-position: center;
     height: 450px;
 }

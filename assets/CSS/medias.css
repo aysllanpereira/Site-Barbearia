@@ -1,0 +1,34 @@
+@media screen and (max-width: 480px) {
+
+    .logo_header h1 {
+        font-size: 1em;
+    }
+
+    .imagem {
+        background-image: url(../imagens/header\ -\ teste\ -\ celular.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn_icons {
+        display: block;
+    }
+    .navigation_header {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: black;
+        height: 100%;
+        width: 35vw;
+        padding: 16px;
+        animation-duration: 1s;
+        margin-left: -100vw;
+
+    }
+}
