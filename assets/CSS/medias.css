@@ -5,14 +5,22 @@
     }
 
     .imagem {
-        background-image: url(../imagens/header\ -\ teste\ -\ celular.jpg);
         background-size: cover;
-        background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
-
+        overflow: hidden;
         
     }
+
+    p.text {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        
+    } 
 }
 
 @media screen and (max-width: 768px) {

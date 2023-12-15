@@ -210,7 +210,7 @@ img {
     background-image: url(../imagens/header\ \(2\).jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    /* background-attachment: fixed; */
     background-position: center;
     height: 450px;
 }
