@@ -21,6 +21,10 @@
         font-weight: bold;
         
     } 
+
+    /* .centro {
+        visibility: hidden;
+    } */
 }
 
 @media screen and (max-width: 768px) {
@@ -40,3 +44,9 @@
 
     }
 }
+
+/* @media screen and (min-width: 968px) {
+    .centro {
+        opacity: 0;
+    }
+} */ 

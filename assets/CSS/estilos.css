@@ -56,6 +56,17 @@ body {
     display: none;
 }
 
+.centro {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 3s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 3s;
+}
 /*  código para inserir uma transição, necessário revisar
 .content {
     opacity: 0;

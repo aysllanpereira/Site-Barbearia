@@ -1,4 +1,4 @@
-var header = document.getElementById("header");
+/* var header = document.getElementById("header");
 var navigation = document.getElementById("navigation_header");
 var content = document.getElementById("content");
 var showSidebar = false;
@@ -44,6 +44,7 @@ function nextImage() {
 
 /* código para inserir uma transição na página (preciso revisar)
 
+
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         document.querySelector('.content').classList.add('show');
@@ -58,3 +59,18 @@ window.addEventListener("scroll", function() {
         element.classList.add('show');
     }
 }); */
+
+
+const myObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    })
+})
+
+const elements = document.querySelectorAll('.centro');
+
+elements.forEach(element => myObserver.observe(element));
