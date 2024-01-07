@@ -12,6 +12,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+
 }
 
 .header, .navigation_header {
@@ -56,27 +57,6 @@ body {
     display: none;
 }
 
-.centro {
-    opacity: 0;
-    filter: blur(15px);
-    transition: all 3s;
-}
-
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transition: all 3s;
-}
-/*  código para inserir uma transição, necessário revisar
-.content {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.content.show {
-    opacity: 1;
-} */
-
 .slider {
     display: flex;
     justify-content: center;
@@ -85,6 +65,12 @@ body {
     margin-top: -100px;
     
 
+}
+
+.slider img {
+    animation: reveal 5ms ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 45%;
 }
 
 .slides {
@@ -124,104 +110,46 @@ img {
 }
 
 .barbershop {
-    margin-top: 80px;
-}
-
-/* .manual-btn {
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn {
-    margin-left: 20px;
-}
-
-.manual-btn:hover {
-    background-color: white;
-}
-
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first {
-    margin-left: -50%;
-}
-
-#radio4:checked ~ .first {
-    margin-left: -75%;
-}
-
-.navigation-auto div {
-    border: 2px solid #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto {
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
     display: flex;
     justify-content: center;
+    margin-top: 120px;
 }
 
-.navigation-auto div {
-    margin-left: 40px;
-}
+  h1, h2, p {
+    animation: appear 5ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+} 
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-    background-color: white;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-    background-color: white;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-    background-color: white;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4 {
-    background-color: white;
-} */
-
-/* @media screen and (max-width: 380px) {
-    .header, .navigation_header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+@keyframes appear {
+    from {
+        opacity: 0;
+        translate: -100vw 0;
     }
 
-    .header {
-        height: 1em;
-        justify-content: space-between;
-        font-size: 1em;
-
+    to {
+        opacity: 1;
+        translate: 0 0;
     }
-} */
+}
 
+@keyframes reveal {
+    from {
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+    }
 
-
-@keyframes showSidebar {
-    from {margin-left: -100vw;}
-    top {margin-left: -10vw;}
+    to {
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+    }
 }
 
 .imagem {
     background-image: url(../imagens/header\ \(2\).jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed; 
     background-position: center;
     height: 450px;
 }
@@ -243,13 +171,12 @@ img {
     margin-top: 30px;
 }
 
-
-
 button {
     margin-top: 10px;
     padding: 10px;
     font-size: 16px;
 }
+
 
 .servicos h2 {
     display: flex;
@@ -268,12 +195,17 @@ button {
     
 }
 
-
+.servicos p {
+    font-size: 1.5em;
+}
 
 .servicos img {
     width: 40%;
     margin-top: 8px;
     margin-bottom: 50px;
+    animation: reveal 5ms ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 45%;
 
 }
 
