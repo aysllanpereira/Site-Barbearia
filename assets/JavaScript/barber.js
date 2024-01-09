@@ -73,4 +73,5 @@ const myObserver = new IntersectionObserver((entries) => {
 
 const elements = document.querySelectorAll('.centro');
 
-elements.forEach(element => myObserver.observe(element));
+elements.forEach(element => myObserver.observe(element)); 
+
