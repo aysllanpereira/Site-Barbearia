@@ -91,16 +91,16 @@ img {
     text-align: center;
     margin-top: 200px;
     color: black;
-}
+} 
 
-.posicoes {
-    display: inline-block;
+.img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .trabalhos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
     border-radius: 50%;
     padding: 15px;
     width: 550px;
