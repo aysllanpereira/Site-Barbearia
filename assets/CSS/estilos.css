@@ -9,7 +9,6 @@
 body {
     background-color: white;
 
-    
 }
 
 .main-header-container {
@@ -19,6 +18,7 @@ body {
     justify-content: space-around;
     width: 100%;
     height: 100px;
+    
 }
 
 .main-header-nav {
@@ -39,6 +39,7 @@ body {
     background-size: cover;
     width: 100vw;
     height: 700px;
+
 }
 
 h1, p {
@@ -70,40 +71,54 @@ img {
 }
 
 .img-main {
+    display: flex;
     margin-top: 200px;
 }
 
 .barber-shop {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     color: white;
     height: 100%;
 
 }
 
 .funcoes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 200px;
+    margin-top: 100px;
     color: black;
 } 
 
-.img-container {
+.imagens-servicos {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
 }
 
 .trabalhos {
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    padding: 15px;
-    width: 550px;
-    height: 500px;
-    background-size: cover;
+    margin: 25px;
+    width: 450px;
+    height: 400px;
 }
+
+.galery {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 700px;
+    margin-top: 75px;
+}
+
+.galeria-imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-galeria {
+    margin-top: 45px;
+}
+
