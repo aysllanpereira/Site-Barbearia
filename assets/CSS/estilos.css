@@ -154,9 +154,54 @@ img {
 
 .form {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    width: 600px;
+    margin-top: 45px;
+    margin-left: 100px;
+
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.548);
+
 }
 
 .formulario {
-    column-count: 3;
-    margin: 150px;
-}    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    padding: 15px;
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+    width: 400px;
+}
+
+input:focus {
+    border-radius: 16px;
+}
+
+textarea {
+    padding: 15px;
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s; 
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+button:focus {
+    border-radius: 45px;
+    background-color: rgba(0, 0, 0, 0.548);
+}
