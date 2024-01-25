@@ -185,7 +185,7 @@ aside {
     height: 350px;
     margin-top: 85px;
     margin-left: 100px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 15px;
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.548);
 
@@ -223,11 +223,16 @@ button {
     width: 100px;
     height: 30px;
     cursor: pointer;
+    margin-top: 15px;
 }
 
-button:focus {
-    border-radius: 45px;
+button:hover {
+    cursor: pointer;
+    border-radius: 65px;
     background-color: rgba(0, 0, 0, 0.548);
+    color: white;
+    transition: 3s;
+    
 }
 
 .contatos {
@@ -260,3 +265,13 @@ button:focus {
 
 }
 
+.contacts {
+    display: flex;
+    flex-direction: column;
+
+}
+.contacts, .img-post {
+    display: flex;
+    flex-direction: column;
+    
+}
