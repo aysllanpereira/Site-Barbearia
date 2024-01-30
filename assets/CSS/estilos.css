@@ -95,17 +95,28 @@ img {
     color: black;
 } 
 
-.imagens-servicos {
+.imagens-srv {
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.imagens-servicos {
+    display: flex;
+    justify-content: space-between;
     margin-top: 45px;
 }
 
+.img-descricao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .img-descricao img:hover {
-    transform: scale(0.8);
+    transform: scale(1.07);
     transition: 3s;
     cursor: pointer;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.301);
 }
 
 .serv {
@@ -114,12 +125,15 @@ img {
 }
 
 .trabalhos {
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
     margin: 25px;
-    width: 450px;
-    height: 400px;
+    width: 350px;
+    height: 330px;
+}
+
+.desc p{
+    font-weight: bolder;
+    margin-top: 20px;
 }
 
 .galery {
