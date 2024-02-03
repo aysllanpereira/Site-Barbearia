@@ -135,13 +135,16 @@ img {
     font-style: italic;
     font-weight: bolder;
     margin-top: 20px;
-    cursor: pointer;
     
 }
 
-/* .esconder {
-    display: none;
-} */
+.btcabelo-barba {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
 
 .galery {
     background-color: rgba(0, 0, 0, 0.863);
@@ -256,14 +259,14 @@ textarea {
     outline: none;
 }
 
-button {
+.btn-enviar {
     width: 100px;
     height: 30px;
     cursor: pointer;
     margin-top: 15px;
 }
 
-button:hover {
+.btn-enviar:hover {
     cursor: pointer;
     border-radius: 65px;
     background-color: rgba(0, 0, 0, 0.548);
