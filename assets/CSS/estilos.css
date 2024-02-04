@@ -275,6 +275,11 @@ textarea {
     
 }
 
+textarea:hover {
+    border-radius: 5.5px;
+    
+}
+
 .contatos {
     display: flex;
     justify-content: center;
