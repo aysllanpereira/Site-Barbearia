@@ -9,7 +9,8 @@
     <link rel="shortcut icon" href="assets/imagens/favicon.png" type="image/x-icon">
     <title>Barbearia</title>
 </head>
-<body>
+<body id="btinicio">
+
     <header class="main-header-container">
         <div class="content">
             <a href="#">Barbearia</a>
@@ -17,16 +18,16 @@
         <div class="icon"></div>
         <ul class="main-header-nav">
             <li class="main-header-nav-item">
-                <a href="#">Inicio</a>
+                <button id="inicio" data-nome="btn1" class="btheader"><a href="#" id="menuInicio">Inicio</a></button>
             </li>
             <li class="main-header-nav-item">
-                <a href="#">Serviços</a>
+                <button id="iservicos" data-nome="btn2" class="btheader"><a href="#" id="menuServicos">Serviços</a></button>
             </li>
             <li class="main-header-nav-item">
-                <a href="#">Galeria de Fotos</a>
+                <button id="igalery" data-nome="btn3" class="btheader"><a href="#" id="menuGalery">Galeria de Fotos</a></button>
             </li>
-            <li class="main-header-nav-item">
-                <a href="#">Contato</a>
+            <li id="ifale-conosco" data-nome="btn4" class="main-header-nav-item">
+                <button class="btheader"><a href="#" id="menuContatos">Contatos</a></button>
             </li>
         </ul>
     </header>
@@ -44,7 +45,7 @@
 
     <section class="servicos">
         <div class="funcoes">
-            <h1>SERVIÇOS</h1>
+            <h1 id="btservicos">SERVIÇOS</h1>
         </div>
     </section>
 
@@ -84,7 +85,7 @@
         </article>
     </section>
 
-    <section class="galery">
+    <section id="btgaleria" class="galery">
         <article class="galeria-imgs">
             <h1 class="tag-galeria">Galeria de Fotos</h1>
         </article>
@@ -122,7 +123,7 @@
         </div>
     </section>
 
-    <div class="fale-conosco">
+    <div id="btfale-conosco" class="fale-conosco">
         <h1 class="fale-h1">FALE CONOSCO</h1>
     </div>
     <aside class="formulario-contatos">

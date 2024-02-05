@@ -1,3 +1,42 @@
+// rolagem de página
+// pegando o corpo da página
+const element = document.body;
+
+// função rolagem de página suave
+function rolagemPagina(elemento) {
+    // selecionando o elemento e fazendo com que seja suave a rolagem de página com o smooth
+    document.querySelector(elemento).scrollIntoView({ behavior: "smooth" });
+}
+
+document.querySelector("#menuInicio").addEventListener("click", function(event) {
+    // tirando o efeito padrão 
+    event.preventDefault();
+    // colocando a função ao elemento da página
+    rolagemPagina("#btinicio");
+});
+
+// selecionando o elemento e adicionando um evento de click pra ele
+document.querySelector("#menuServicos").addEventListener("click", function(event) {
+    // tirando o efeito padrão 
+    event.preventDefault();
+    // colocando a função ao elemento da página
+    rolagemPagina("#btservicos");
+});
+
+document.querySelector("#menuGalery").addEventListener("click", function(event) {
+    // tirando o efeito padrão 
+    event.preventDefault();
+    // colocando a função ao elemento da página
+    rolagemPagina("#btgaleria");
+});
+
+document.querySelector("#menuContatos").addEventListener("click", function(event) {
+    // tirando o efeito padrão 
+    event.preventDefault();
+    // colocando a função ao elemento da página
+    rolagemPagina("#btfale-conosco");
+});
+
 // função para mostrar os valores de cada serviço ao clicar nos botões
 
 function exibir(servico) {
