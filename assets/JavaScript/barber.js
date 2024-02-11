@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // ao clicar no botão, irá exibir os valores de cada case
     buttonCabeloBarba.addEventListener("click", () => {
-        exibir("cabelo-barba");
+            exibir("cabelo-barba");
     });
 
     buttonBarba.addEventListener("click", () => {
