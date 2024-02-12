@@ -39,6 +39,18 @@ header {
     margin: 0 15px;
 }
 
+.main-header-nav-item:hover {
+    transform: scale(1.1);
+    transition: 2s;
+    background-color: white;
+    border-radius: 2px;
+    
+}
+
+.main-header-nav-item:hover a {
+    color: black;
+}
+
 .content {
     display: flex;
     justify-content: center;
