@@ -1,3 +1,14 @@
+// menu 
+
+function menu() {
+    let menuMobile = document.querySelector(".main-header-nav");
+    menuMobile.classList.toggle("open");
+
+    document.querySelectorAll(".main-header-nav-item button").forEach(item => {
+        item.addEventListener("click", menu);
+    })
+}
+
 // rolagem de página
 // pegando o corpo da página
 const element = document.body;
