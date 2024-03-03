@@ -42,14 +42,29 @@ header {
 .main-header-nav-item:hover {
     transform: scale(1.1);
     transition: 2s;
-    background-color: white;
     border-radius: 2px;
     
 }
 
 .main-header-nav-item:hover a {
-    color: black;
+    color: rgb(255, 255, 255);
+
 }
+
+.main-header-nav-item a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fcfcfc; /* cor da linha */
+    transition: width 0.3s ease;
+  }
+  
+.main-header-nav-item a:hover::after {
+    width: 100%;
+  }
 
 .content {
     display: flex;
@@ -92,6 +107,25 @@ header {
 
 }
 
+.whatsapp-float {
+    position: fixed;
+    bottom: 80px; /* Distância do fundo da página */
+    right: 50px; /* Distância da margem direita da página */
+    z-index: 1000; /* Garante que o botão flutuante esteja acima de outros elementos */
+}
+  
+.whatsapp-float img {
+    width: 60px; /* Largura da imagem do ícone do WhatsApp */
+    height: auto;
+    border-radius: 50%; /* Formato de círculo */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s ease; /* Adiciona uma transição suave */
+}
+  
+.whatsapp-float img:hover {
+    transform: scale(1.1); /* Aumenta um pouco o tamanho ao passar o mouse */
+}
+  
 h1, p {
     display: flex;
     justify-content: center;
