@@ -12,34 +12,37 @@
 <body>
     <p id="btinicio"></p>
     <header class="main-header-container">
-        <div class="content">
-            <a href="#">Barbearia</a>
-            <div class="fechar" id="btnfechar">
-                <button class="btnX">
-                    <i class="bi bi-x"></i>
-                </button>
+
+        <nav>
+
+            <div class="logo">
+                <div class="menu">
+                    <a href="#">Barbearia</a>
+                </div>
+                <div class="menu-responsivo">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </div>
-            <div class="menu-btn">
-                <button class="nav-button" id="btnMenu" onclick="menu()">
-                    <i class="bi bi-list"></i>
-                </button>
-            </div>  
-        </div>
-        <div class="icon"></div>
-        <ul class="main-header-nav">
-            <li class="main-header-nav-item">
-                <button id="inicio" data-nome="btn1" class="btheader"><a href="#" id="menuInicio">Inicio</a></button>
-            </li>
-            <li class="main-header-nav-item">
-                <button id="iservicos" data-nome="btn2" class="btheader"><a href="#" id="menuServicos">Serviços</a></button>
-            </li>
-            <li class="main-header-nav-item">
-                <button id="igalery" data-nome="btn3" class="btheader"><a href="#" id="menuGalery">Galeria de Fotos</a></button>
-            </li>
-            <li id="ifale-conosco" data-nome="btn4" class="main-header-nav-item">
-                <button class="btheader"><a href="#" id="menuContatos">Contatos</a></button>
-            </li>
-        </ul>
+
+            <div class="icon"></div>
+            <ul class="main-header-nav">
+                <li class="main-header-nav-item">
+                    <button id="inicio" data-nome="btn1" class="btheader"><a href="#" id="menuInicio">Inicio</a></button>
+                </li>
+                <li class="main-header-nav-item">
+                    <button id="iservicos" data-nome="btn2" class="btheader"><a href="#" id="menuServicos">Serviços</a></button>
+                </li>
+                <li class="main-header-nav-item">
+                    <button id="igalery" data-nome="btn3" class="btheader"><a href="#" id="menuGalery">Galeria de Fotos</a></button>
+                </li>
+                <li id="ifale-conosco" data-nome="btn4" class="main-header-nav-item">
+                    <button class="btheader"><a href="#" id="menuContatos">Localização e Contatos</a></button>
+                </li>
+            </ul>
+        </nav>
+
     </header>
 
     <main class="main-content-container">
@@ -68,7 +71,7 @@
     </section>
 
     <section class="imagens-srv">
-        <article class="imagens-servicos">
+
             <div class="img-descricao">
                     <div class="desc">
                         <img src="assets/imagens/Cabelo-barba (2).jpg" alt="Cabelo e Barba" class="trabalhos">
@@ -100,7 +103,7 @@
                 <!-- <h4>Hidratação</h4> -->
                 <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi eveniet hic iusto nemo officiis.</p> -->
             </div>
-        </article>
+
     </section>
 
     <section id="btgaleria" class="galery">
@@ -142,10 +145,10 @@
     </section>
 
     <div id="btfale-conosco" class="fale-conosco">
-        <h1 class="fale-h1">FALE CONOSCO</h1>
+        <h1 class="fale-h1">LOCALIZAÇÃO E CONTATOS</h1>
     </div>
     <aside class="formulario-contatos">
-          <div class="form">
+        <!--  <div class="form">
             <form action="#" method="post" class="formulario">
                 <label for="name">
                     <input type="text" name="nome" id="inome" class="campo" placeholder="Nome" autocomplete="off" required>
@@ -160,10 +163,14 @@
                     <input type="hidden" name="acao" id="ienviar" value="enviar">
                     <button class="btn-enviar" title="Enviar">Enviar</button>
                 </label>
-            </form>
-        </div> 
+            </form> 
+            </div> -->
 
-        <section class="contatos">
+        <iframe
+        width="90%"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7476.4115143508725!2d-54.58602051703828!3d-20.45674056051272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e8954ac0b10d%3A0x7149aba0cb5688b8!2sShopping%20Campo%20Grande!5e0!3m2!1sen!2sbr!4v1688840244482!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!-- <section class="contatos">
             <div class="img-post">
                 <img src="assets/imagens/post.png" alt="Post">
 
@@ -189,12 +196,34 @@
                     <i class="bi bi-calendar-date"> Segunda a Sexta, das 09:00h às 20:00h</i>
                 </p>
             </div>
-        </section>
+        </section> -->
     </aside>
 
     <footer class="rodape">
+
         <div class="final">
-            <h3>Aysllan Santos</h3>
+            <h3> &copy; Aysllan Santos</h3>
+        </div>
+
+        <div class="contacts">
+            <div class="contact-info">
+                <p>
+                    <i class="bi bi-telephone"> Telefone: 4002-8922</i>
+                </p>
+                <p>
+                    <i class="bi bi-instagram"> Instagram: @barberaria
+                    </i>
+                </p>
+            </div>
+            <div class="contact-info">
+                <p>
+                    <i class="bi bi-whatsapp"> Whatsapp (61) 99999-9999</i>
+                </p>
+                <p>
+                    <i class="bi bi-geo-alt"> Endereço: Qe 80, Lt 800, Rua 500</i>
+                </p>
+            </div>
+
         </div>
     </footer>
     <script src="assets/JavaScript/barber.js"></script>
