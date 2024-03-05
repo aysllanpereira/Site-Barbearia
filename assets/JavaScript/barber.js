@@ -45,47 +45,8 @@ document.querySelector("#menuContatos").addEventListener("click", function(event
     // tirando o efeito padrão 
     event.preventDefault();
     // colocando a função ao elemento da página
-    rolagemPagina("#btfale-conosco");
+    rolagemPagina("#localizacao-contatos");
 });
-
-class MobileNavbar {
-    constructor(mobileMenu, navList, navLinks) {
-        this.mobileMenu = document.querySelector(mobileMenu);
-        this.navList = document.querySelector(navList);
-        this.navLinks = document.querySelectorAll(navLinks);
-        this.activeClass = "active";
-
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    animateLinks() {
-        this.navLinks.forEach((link, index) => {
-            link.style.animation 
-            ? (link.style.animation = "") 
-            : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1}s`);
-        });
-    }
-  
-    handleClick() {
-        this.navList.classList.toggle(this.activeClass);
-        this.mobileMenu.classList.toggle(this.activeClass);
-        this.animateLinks();
-    }
-
-    init() {
-        if(this.mobileMenu) {
-            this.addClickEvent();
-        } 
-        return this;
-    }
-
-    const mobileNavbar = new MobileNavbar (
-        ".mobile-menu",
-        ".nav-list",
-        ".nav-list li"
-    );
-
-    mobileNavbar.init();
 
 // função para mostrar os valores de cada serviço ao clicar nos botões
 

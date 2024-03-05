@@ -3,6 +3,11 @@
         overflow-x: hidden;
     }
 
+    header {
+        position: fixed;
+        top: 0;
+    }
+
     .main-header-nav {
         display: none;
         flex-direction: column;
@@ -28,7 +33,7 @@
     }
 
     .menu, .menu-responsivo {
-        margin-left: 170px;
+        margin-left: 190px;
     }
 
     .menu-responsivo {
@@ -42,9 +47,73 @@
         margin: 8px;
     }
 
+    .whatsapp-float {
+        position: fixed;
+        bottom: 50px; /* Distância do fundo da página */
+        right: 10px; /* Distância da margem direita da página */
+        z-index: 1000; /* Garante que o botão flutuante esteja acima de outros elementos */
+    }
+
+    .whatsapp-float img {
+        width: 40px; /* Largura da imagem do ícone do WhatsApp */
+        height: auto;
+        border-radius: 50%; /* Formato de círculo */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        transition: transform 0.2s ease; /* Adiciona uma transição suave */
+    }
+      
+    .whatsapp-float img:hover {
+        transform: scale(1.1); /* Aumenta um pouco o tamanho ao passar o mouse */
+    }
+
+    .trabalhos {
+        width: 250px;
+        height: 250px;
+    }
+
+    .img-descricao img:hover {
+        transform: scale(1.07);
+        transition: 3s;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.301);
+    }
+
+    .galery {
+        flex-direction: column;
+        height: 2090px;
+    }
+
+    .galery-imgs {
+        width: 270px;
+    }
+
+    .galery-imgs:hover {
+        transform: scale(1.1);
+        transition: 3s;
+    }
+
+    .localizacao-contatos {
+        display: flex;
+        margin-left: 45px;
+    }
+
+    .rodape {
+        background-color: #161b21;
+        color: white;
+        font-size: 10px;
+    }
+
+    .final {
+        margin-left: 10px;
+    }
+
+    .contact-info {
+        margin-top: 12px;
+    }
+
 } 
 
-.main-header-nav.active {
+/* .main-header-nav.active {
     transform: translateX(0);
 }
 
@@ -69,4 +138,4 @@
 
 .menu-responsivo.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
-}
+}  */
