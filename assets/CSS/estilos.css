@@ -211,6 +211,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 
 .img-descricao img:hover {
@@ -230,6 +231,7 @@ img {
     margin: 25px;
     width: 350px;
     height: 330px;
+
 }
 
 .desc p{

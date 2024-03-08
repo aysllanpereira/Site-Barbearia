@@ -47,6 +47,10 @@
         margin: 8px;
     }
 
+    .main-header-nav-item {
+        display: block;
+    }
+
     .main-content-container {
         background-image: url(../imagens/header\ \(2\).jpg);
         background-repeat: no-repeat;
