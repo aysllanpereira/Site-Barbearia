@@ -48,6 +48,17 @@ document.querySelector("#menuContatos").addEventListener("click", function(event
     rolagemPagina("#localizacao-contatos");
 });
 
+// função para exibir o menu Mobile
+
+const mobile = document.getElementById("menuMobile");
+
+function  toggleMenu() {
+    const nav = document.getElementById("nav");
+    nav.classList.toggle("active");
+}
+
+mobile.addEventListener( "click" , toggleMenu);
+
 // função para mostrar os valores de cada serviço ao clicar nos botões
 
 function exibir(servico) {

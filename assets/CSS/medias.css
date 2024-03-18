@@ -32,8 +32,18 @@
         flex-direction: row-reverse;
     }
 
+    .main-header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+    
+    }
+
     .menu, .menu-responsivo {
-        margin-left: 190px;
+        margin-left: 100px;
     }
 
     .menu-responsivo {
